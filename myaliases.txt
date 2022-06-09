@@ -1,0 +1,41 @@
+# GENERAL
+alias update='sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo snap refresh'
+alias cp='cp -rv'
+alias mv='mv -v'
+alias mkdir='mkdir -pv'
+alias wget='wget -c'
+
+
+# GIT
+alias gs='git status'
+alias gl='git log --oneline'
+alias gd='git diff'
+alias gdt='git difftool'
+alias gmt='git mergetool'
+alias gc='git commit'
+alias gcae='git commit --allow-empty'
+alias gch='git checkout'
+alias gr='git rebase -i'
+alias gb='git branch'
+alias gst='git stash'
+alias ga='git add -p'
+alias gai='git add -i'
+alias gf='git fetch && git status'
+alias gignore='git update-index --assume-unchanged'
+alias gunignore='git update-index --no-assume-unchanged'
+alias gmnff='git merge --no-ff -e -m "" -'
+
+# PYTHON DEV
+alias pym='python3 manage.py'
+alias mkenv='python3 -m venv venv'
+alias startenv='source venv/bin/activate && which python3'
+alias stopenv='deactivate'
+
+# DOCKER
+alias dockernu='docker images | grep "<none>"' 
+alias dockernurm='docker images | grep "<none>" | awk "{print $3}" | xargs docker rmi'
+
+# OTHER
+export HISTTIMEFORMAT="%F %T "
+alias rs='curl rate.sx'
+alias wt='curl wttr.in'
