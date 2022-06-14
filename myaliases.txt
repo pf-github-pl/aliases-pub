@@ -39,3 +39,7 @@ alias dockernurm='docker images | grep "<none>" | awk "{print $3}" | xargs docke
 export HISTTIMEFORMAT="%F %T "
 alias rs='curl rate.sx'
 alias wt='curl wttr.in'
+## OTHER - CLIPBOARD (sudo apt install xclip)
+alias clipc='xclip -selection c'
+alias clipv='xclip -selection c -o'
+
