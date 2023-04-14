@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Exit script if not running on Linux
-if [[ ! "$OSTYPE" =~ ^linux ]]; then
+if [[ ! "$OSTYPE" =~ ^linux  ]] && [[ ! "$OSTYPE" == "darwin"* ]]; then
     echo "Your OS is not supported."
 	echo "Finishing..."
 	exit 0
