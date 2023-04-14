@@ -33,7 +33,8 @@ alias stopenv='deactivate'
 
 # DOCKER
 alias dockernu='docker images | grep "<none>"' 
-alias dockernurm='docker images | grep "<none>" | awk "{print $3}" | xargs docker rmi'
+alias dockerrminu='docker images | grep "<none>" | awk "{print $3}" | xargs docker rmi'
+alias dockerrmi='docker images | awk '{print $3}' | xargs docker rmi'
 
 # OTHER
 export HISTTIMEFORMAT="%F %T "
