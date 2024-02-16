@@ -5,7 +5,6 @@ alias mv='mv -v'
 alias mkdir='mkdir -pv'
 alias wget='wget -c'
 
-
 # GIT
 alias gs='git status'
 alias gl='git log --oneline'
@@ -26,20 +25,30 @@ alias gunignore='git update-index --no-assume-unchanged'
 alias gmnff='git merge --no-ff -e -m "" -'
 
 # PYTHON DEV
-alias pym='python3 manage.py'
-alias mkenv='python3 -m venv venv'
-alias startenv='source venv/bin/activate && which python3'
-alias stopenv='deactivate'
+alias mkv='python3 -m venv venv'
+alias sv='source venv/bin/activate && which python3'
+alias stv='deactivate'
 
-# DOCKER
-alias dockernu='docker images | grep "<none>"' 
-alias dockerrminu='docker images | grep "<none>" | awk "{print $3}" | xargs docker rmi'
-alias dockerrmi='docker images | awk '{print $3}' | xargs docker rmi'
+# DJANGO
+alias pi='pip install'
+alias pui='pip uninstall'
+
+alias dj="python manage.py"
+alias djrs="python manage.py runserver"
+alias djsh="python manage.py shell"
+alias djsp="python manage.py shell_plus"
+alias djm="python manage.py migrate"
+alias djmm="python manage.py makemigrations"
+alias djmmm="python manage.py makemigrations & python manage.py migrate"
+alias djdd="python manage.py dumpdata"
+alias djld="python manage.py loaddata"
+alias djt="python manage.py test"
 
 # OTHER
 export HISTTIMEFORMAT="%F %T "
 alias rs='curl rate.sx'
 alias wt='curl wttr.in'
+
 ## OTHER - CLIPBOARD (sudo apt install xclip)
 alias clipc='xclip -selection c'
 alias clipv='xclip -selection c -o'
