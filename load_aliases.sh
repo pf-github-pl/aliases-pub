@@ -17,7 +17,7 @@ if test /home/$USER/.myaliases; then
 	fi
 fi
 
-cp ./myaliases.txt /home/$USER/.myaliases
+cp ./myaliases /home/$USER/.myaliases
 echo "The file copied to /home/$USER/.myaliases"
 
 # Choose your shell
